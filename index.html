@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo-list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="src/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="page-title">To<span class="color">do.</span></h1>
+      <div id="form">
+        <input type="text" id="todo-input" placeholder="Add a new task" />
+        <div class="action-row">
+          <button id="add_button">Add</button>
+          <button id="generate_button">Generate item</button>
+        </div>
+      </div>
+      <ul id="active-list">
+        <div class="title">
+          Tasks
+        </div>
+        <div class="list-container">
+          <li class="todo-item" id="todo-item-template">
+            <div class="toggle-checkbox">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <span class="title"></span>
+            <button class="delete">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </li>
+        </div>
+      </ul>
+      <ul id="completed-list">
+        <div class="title">
+          Complete Tasks
+        </div>
+        <div class="list-container"></div>
+      </ul>
+    </div>
+  </body>
+</html>

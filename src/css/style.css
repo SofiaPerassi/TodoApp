@@ -1,0 +1,142 @@
+body {
+  background-color: #121215;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-title {
+  color: #ebebeb;
+  font-size: 4rem;
+}
+
+.page-title > .color {
+  color: #6e26ee;
+}
+
+.container {
+  padding: 2rem 0;
+  max-width: 50vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  background-color: #2f2d35;
+  color: #f4f4f4;
+  border: solid 1px #3e3b46;
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #6e26ee;
+  color: #ebebeb;
+  cursor: pointer;
+}
+
+button:hover:not(.delete) {
+  background-color: #6623da;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: #18181c;
+  max-height: 20rem;
+  overflow-y: auto;
+  border-radius: .5rem;
+}
+
+ul > .title {
+  font-size: 21px;
+  color: rgb(141, 143, 205);
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#form > .action-row {
+  margin-left: auto;
+}
+
+.todo-item > .delete {
+  border: none;
+  background-color: transparent;
+  margin-left: auto;
+}
+
+.todo-item {
+  color: #cacbe1;
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: solid 1px #3e3b46;
+  border-radius: 0.25rem;
+  background-color: #2f2d35;
+}
+
+#completed-list > .todo-item {
+  opacity: .5;
+}
+
+#completed-list .todo-item > .title {
+  text-decoration: line-through;
+  color: #9091a1;
+}
+
+#todo-input {
+  height: 1.5rem;
+}
+
+.toggle-checkbox {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.58);;
+  -moz-box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.58);;
+  box-shadow: inset 0px 0px 3px 0px rgba(0, 0, 0, 0.58);;
+}
+
+#active-list .toggle-checkbox {
+  background-color: #ebebeb;
+}
+
+#active-list .toggle-checkbox i {
+  display: none;
+}
+
+#completed-list .toggle-checkbox {
+  background-color: #6e26ee;
+  color: #ebebeb;
+}
+
+#todo-item-template {
+  display: none;
+}
