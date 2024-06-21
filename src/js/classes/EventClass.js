@@ -34,6 +34,7 @@ class EventClass {
         if (!this.events[eventName]) {
             return;
         }
+        console.lof('Off')
         this.events[eventName] = this.events[eventName].filter(cb => cb !== callback);
     }
 
@@ -46,6 +47,7 @@ class EventClass {
         if (!this.events[eventName]) {
             return;
         }
+        console.log('Emit')
         this.events[eventName].forEach(cb => cb(data));
     }
 }

@@ -13,7 +13,7 @@ body * {
 }
 
 .page-title > .color {
-  color: #6e26ee;
+  color: #457b9d;
 }
 
 .container {
@@ -46,13 +46,13 @@ button {
   font-size: 1rem;
   border: none;
   border-radius: 0.25rem;
-  background-color: #6e26ee;
+  background-color: #457b9d;
   color: #ebebeb;
   cursor: pointer;
 }
 
 button:hover:not(.delete) {
-  background-color: #6623da;
+  background-color: #457b9d;
 }
 
 ul {
@@ -67,8 +67,12 @@ ul {
 
 ul > .title {
   font-size: 21px;
-  color: rgb(141, 143, 205);
+  color: #457b9d;
   margin-bottom: 1rem;
+}
+
+li {
+  margin-top: 5px;
 }
 
 input[type="checkbox"] {
@@ -83,6 +87,7 @@ input[type="checkbox"] {
   border: none;
   background-color: transparent;
   margin-left: auto;
+  color: #e63946;
 }
 
 .todo-item {
@@ -133,10 +138,16 @@ input[type="checkbox"] {
 }
 
 #completed-list .toggle-checkbox {
-  background-color: #6e26ee;
+  background-color: #457b9d;
   color: #ebebeb;
 }
 
 #todo-item-template {
   display: none;
+}
+
+@media (max-width: 750px) {
+  .container{
+    max-width: 90vw;
+  }
 }

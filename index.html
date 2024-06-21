@@ -22,11 +22,31 @@
       <h1 class="page-title">To<span class="color">do.</span></h1>
       <div id="form">
         <input type="text" id="todo-input" placeholder="Add a new task" />
+        <!-- Priority selector -->
+        <select id="todo-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <!-- <select id="priority-filter">
+          <option value="all">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button id="sort-by-priority">Sort by Priority</button> -->
+        
+        <!-- Action buttons -->
         <div class="action-row">
           <button id="add_button">Add</button>
           <button id="generate_button">Generate item</button>
         </div>
       </div>
+      <!-- Search filter -->
+      <div id="search">
+        <input type="text" id="search-input" placeholder="Search tasks" />
+      </div>
+      <!-- Tasks list -->
       <ul id="active-list">
         <div class="title">
           Tasks
@@ -37,12 +57,21 @@
               <i class="fa-solid fa-check"></i>
             </div>
             <span class="title"></span>
+            <span class="priority"></span>
+            <input type="text" class="edit-input" style="display:none;">
             <button class="delete">
               <i class="fa-solid fa-trash"></i>
+            </button>
+            <button class="edit">
+              <i class="fa-solid fa-pencil"></i>
+            </button>
+            <button class="save" style="display: none">
+              <i class="fa-solid fa-save"></i>
             </button>
           </li>
         </div>
       </ul>
+      <!-- Completed tasks -->
       <ul id="completed-list">
         <div class="title">
           Complete Tasks
