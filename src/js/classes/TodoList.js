@@ -123,7 +123,7 @@ class TodoList {
     });
   }
 
-  // /** renders all todos based on their status */
+  // renders all todos based on their status
   _renderAll() {
     Object.values(this.statuses).forEach(status => {
       const filteredTodos = this.todos.filter(todo => todo.status === status);
@@ -182,7 +182,7 @@ class TodoList {
     });
   }
   
-  /** filters todos based on search query */
+  // Filters todos based on search query 
   _searchTodos(query) {
     Object.values(this.statuses).forEach(status => {
       const filteredTodos = this.todos.filter(todo => todo.status === status && todo.title.toLowerCase().includes(query));

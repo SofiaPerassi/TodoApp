@@ -23,7 +23,7 @@
       <div id="form">
         <input type="text" id="todo-input" placeholder="Add a new task" />
         <!-- Priority selector -->
-        <select id="todo-priority">
+        <select id="todo-priority" class="priority-select">
           <option value="low">Low</option>
           <option value="medium">Medium</option>
           <option value="high">High</option>
@@ -53,21 +53,25 @@
         </div>
         <div class="list-container">
           <li class="todo-item" id="todo-item-template">
-            <div class="toggle-checkbox">
-              <i class="fa-solid fa-check"></i>
+            <div class="mobile">
+              <div class="toggle-checkbox">
+                <i class="fa-solid fa-check"></i>
+              </div>
+              <span class="title"></span>
+              <input type="text" class="edit-input" style="display:none;">
             </div>
-            <span class="title"></span>
             <span class="priority"></span>
-            <input type="text" class="edit-input" style="display:none;">
-            <button class="delete">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pencil"></i>
-            </button>
-            <button class="save" style="display: none">
-              <i class="fa-solid fa-save"></i>
-            </button>
+            <div class="actions">
+              <button class="delete">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="edit">
+                <i class="fa-solid fa-pencil"></i>
+              </button>
+              <button class="save" style="display: none">
+                <i class="fa-solid fa-save"></i>
+              </button>
+            </div>
           </li>
         </div>
       </ul>
